@@ -3,7 +3,8 @@ services:
   - docker
 
 before_install:
+  -gem install bundler
   - docker build -t omieecv001/docker-react1 -f Dockerfile.dev .
 
 script: 
-  - docker run omieecv001/docker-react1 npm run test -- --coverage
+  - docker run o mieecv001/docker-react1 npm run test -- --coverage
