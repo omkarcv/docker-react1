@@ -2,10 +2,8 @@ sudo: required
 services:
   - docker
 
-before_install:
-  - echo "BEFORE INSTALL START"
+before_install: 
   - gem install bundler
-  - echo "BEFORE INSTALL END"
   - docker build -t omieecv001/docker-react1 -f Dockerfile.dev .
 
 script: 
