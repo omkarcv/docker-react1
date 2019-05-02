@@ -7,4 +7,4 @@ before_install:
   - docker build -t omieecv001/docker-react1 -f Dockerfile.dev .
 
 script: 
-  - docker run o mieecv001/docker-react1 npm run test -- --coverage
+  - docker run omieecv001/docker-react1 npm run test -- --coverage
