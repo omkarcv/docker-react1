@@ -3,8 +3,6 @@ services:
   - docker
 
 before_install: 
-  - gem update --system
-  - gem install bundler
   - docker build -t omieecv001/docker-react1 -f Dockerfile.dev .
 
 script: 
